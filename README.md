@@ -115,6 +115,11 @@ const input = [
 
 console.log(argwhere(input));
 ```
+Maka, Output yang akan diberikan kode adalah :
+
+```
+[ [ 0, 0, 0 ], [ 0, 1, 1 ], [ 1, 0, 0 ], [ 1, 1, 1 ] ]
+```
 
 Adapun visualisasi dari outputan yang diberikan pada soal ini.
 Di bawah, merupakan visualisasi dari output-an array dari array dimensi ke-0:
