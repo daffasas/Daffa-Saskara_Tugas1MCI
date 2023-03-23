@@ -13,7 +13,7 @@ MCI Lab Open Recruitment's Task(s)
 
 ### Kendala Pengerjaan soal
 
-##latihan2a.js & latihan2b.js
+## latihan2a.js & latihan2b.js
 
 ### Screenshot(s) solusi
 
@@ -33,7 +33,7 @@ MCI Lab Open Recruitment's Task(s)
 
 ### Kendala Pengerjaan soal
 
-##latihan2.sql
+## latihan2.sql
 
 ### Screenshot(s) solusi
 
