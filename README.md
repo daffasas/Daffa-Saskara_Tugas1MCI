@@ -23,7 +23,7 @@ function calonAdminMCI() {
 
 calonAdminMCI();
 ```
-Membuat function bernama `` calonAdminMCI() `` yang berisi perintah diatas. Membuat `` let `` bernama `` time `` selama 3000 (3 detik).
+Membuat function bernama `` calonAdminMCI() `` yang berisi perintah diatas. Membuat `` let `` bernama `` time `` selama 3000ms (3 detik).
 ### Screenshot(s) solusi
 ![running code lat1](https://user-images.githubusercontent.com/88588446/227226480-ebd34ff9-60b1-49d7-b0c4-199bfb82402f.png)
 ### Kendala Pengerjaan soal
@@ -127,7 +127,7 @@ Lalu, berikut untuk visualisasi dari output-an array dari array dimensi ke -1:
 
 Kita ambil contoh pada output-an `` [ 0, 1, 1 ] `` , angka `` '0' `` pertama menyatakan bahwa value berada di dimensi ke 0 (pertama) [warna biru]. Lalu, `` '1' `` yang kedua merupakan diiterasi ke `` j `` ke-1 terdapat value yang bukan 0 [warna oranye]. Dan angka `` '1' `` terakhir merupakan pada iterasi ` k ` terdapat value yang tidak 0 [warna merah].
 
-Bisa dilihat karena ada 4 value dalam array input-an, maka keluar 4 array 2 dimensi yang menunjukkan 'alamat' value-vallue tersebut. Dan bisa dilihat bahwa tidak ada value yang tidak sama dengan 0 pada dimensi ke-2 (array ke ketiga), dengan bukti tidak ada output yang di awali `` [ 2, x, x ]
+Bisa dilihat karena ada 4 value dalam array input-an, maka keluar 4 array 2 dimensi yang menunjukkan 'alamat' value-vallue tersebut. Dan bisa dilihat bahwa tidak ada value yang tidak sama dengan 0 pada dimensi ke-2 (array ke ketiga), dengan bukti tidak ada satupun output yang di awali `` [ 2, x, x ] `` .
 
 
 ### Screenshot(s) solusi
