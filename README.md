@@ -215,3 +215,27 @@ Yang nanti value `` 'A' `` , `` 'B' `` , dan  `` 'C' `` akan di `` END `` sebaga
 ![running lat4 sql](https://user-images.githubusercontent.com/88588446/227228997-3a0f7d89-008f-4ae3-8f38-7bf56b76a49d.png)
 ### Kendala Pengerjaan soal
 Pada awalnya, tidak tahu syntax penggunaan `` CASE `` pada MySQL.
+
+## latihan5.sql
+Pada tabel, Tampilkan daftar nama, semester dan ipk berdasarkan ipk tertinggi tiap semester. Diurutkan berdasarkan semesternya. Jika ada yang nilainya sama, maka diurutkan berdasarkan alfabet.
+```
+SELECT 
+    nama, semester, ipk
+FROM
+    data_fix
+WHERE
+    ipk IN (SELECT 
+            MAX(ipk)
+        FROM
+            data_fix
+        GROUP BY semester)
+        
+ORDER BY semester ASC , nama ASC , ipk DESC;
+```
+Men-Select `` nama, semester, ipk `` dari tabel `` data_fix `` , dengan syarat ( `` WHERE `` ) ipk `` IN `` , `` MAX `` ipk di select dari tabel, dan di `` GROUP BY `` dengan semester. Terakhir, dilakukan `` ORDER BY semester ASC , nama ASC , ipk DESC ``  .
+
+## Screenshot(s) solusi
+![running lat5 sql](https://user-images.githubusercontent.com/88588446/227255886-73259a2f-451a-46b6-960c-c7e67d948f25.png)
+
+## Kendala Pengerjaan soal
+Tidak Ada.
