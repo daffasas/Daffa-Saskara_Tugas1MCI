@@ -1,4 +1,4 @@
-function namaAdmin() {
+function calonAdminMCI() {
 
   console.log("Saya Calon Admin MCI");
 
@@ -7,4 +7,6 @@ function namaAdmin() {
     console.log("Daffa Saskara");
   }, time);
   
-}
+};
+
+calonAdminMCI();
