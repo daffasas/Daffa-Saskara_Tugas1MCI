@@ -127,6 +127,8 @@ Lalu, berikut untuk visualisasi dari output-an array dari array dimensi ke -1:
 
 Kita ambil contoh pada output-an `` [ 0, 1, 1 ] `` , angka `` '0' `` pertama menyatakan bahwa value berada di dimensi ke 0 (pertama) [warna biru]. Lalu, `` '1' `` yang kedua merupakan diiterasi ke `` j `` ke-1 terdapat value yang bukan 0 [warna oranye]. Dan angka `` '1' `` terakhir merupakan pada iterasi ` k ` terdapat value yang tidak 0 [warna merah].
 
+Bisa dilihat karena ada 4 value dalam array input-an, maka keluar 4 array 2 dimensi yang menunjukkan 'alamat' value-vallue tersebut. Dan bisa dilihat bahwa tidak ada value yang tidak sama dengan 0 pada dimensi ke-2 (array ke ketiga), dengan bukti tidak ada output yang di awali `` [ 2, x, x ]
+
 
 ### Screenshot(s) solusi
 ![running code lat3](https://user-images.githubusercontent.com/88588446/227226471-7bc5af51-fbac-4ed6-926f-1553fae5f5b9.png)
@@ -136,25 +138,80 @@ sedikit memusingkan saat men-translate soal.
 # SQL
 
 ## latihan1.sql
+Tampilkan daftar nama dan ukt berdasarkan nominal ukt yang paling mahal!
+
+``` 
+SELECT 
+    nama, ukt
+FROM
+    data_fix
+ORDER BY ukt DESC;
+```
+Men-select `` nama, ukt `` dari tabel `` data_fix `` dan melakukan `` ORDER BY `` `` ukt ``  secara Descending / Menurun.
 
 ### Screenshot(s) solusi
 
-### Kendala Pengerjaan soal
+![running lat1 sql](https://user-images.githubusercontent.com/88588446/227229013-015c3f1b-39d9-4c10-b009-385ab85daabc.png)
 
+### Kendala Pengerjaan soal
+Tidak Ada.
 ## latihan2.sql
-
+Tampilkan daftar nama dan ukt berdasarkan nominal ukt yang paling mahal, jika ada ukt yang sama, urutkan berdasarkan nama mahasiswa secara alfabetikal.
+```
+SELECT 
+    nama, ukt
+FROM
+    data_fix
+ORDER BY ukt DESC, nama ASC;
+```
+Men-select `` nama, ukt `` dari tabel `` data_fix `` dan melakukan `` ORDER BY `` `` ukt `` secara Descending / Menurun, dan `` nama `` secara Ascending / Meningkat.
 ### Screenshot(s) solusi
 
+![running lat2 sql](https://user-images.githubusercontent.com/88588446/227229007-476ce7a1-f120-4a04-b405-80bc1a0df4f0.png)
+
 ### Kendala Pengerjaan soal
+Tidak Ada.
 
 ## latihan3.sql
-
+Pada tabel, Hitunglah jumlah mahasiswa yang memiliki ipk >= 3.5 dan berada di semester 8.
+```
+SELECT 
+    COUNT(*) AS Jumlah_Mhs
+FROM
+    data_fix
+WHERE
+    ipk >= 3.5 AND semester = 8;
+```
+Men-Select `` Jumlah_Mhs `` (column baru) dari `` data_fix `` dengan syarat ( `` WHERE `` ) yaitu `` ipk >= 3.5 AND semester = 8 `` .
 ### Screenshot(s) solusi
+![running lat3 sql](https://user-images.githubusercontent.com/88588446/227229019-105b44fc-c149-442a-9380-de77fe42e595.png)
 
 ### Kendala Pengerjaan soal
-
+Tidak Ada.
 ## latihan4.sql
+Pada tabel, Tampilkan nama, ukt, dan golongan. Jika ukt mahasiswa kurang dari sama dengan 1 juta, maka masuk golongan "A". Jika ukt mahasiswa diatas 1 juta sampai dengan 2 juta, maka masuk golongan "B" Jika ukt mahasiswa diatas 2 juta, maka masuk golongan "C".
+
+```
+SELECT 
+    nama,
+    ukt,
+    CASE
+        WHEN ukt <= 1000000 THEN 'A'
+        WHEN ukt > 1000000 AND ukt <= 2000000 THEN 'B'
+        WHEN ukt > 2000000 THEN 'C'
+    END AS golongan
+FROM
+    data_fix;
+```
+Men-Select `` nama, ukt `` dengan `` CASE `` dimana,
+```
+        WHEN ukt <= 1000000 THEN 'A'
+        WHEN ukt > 1000000 AND ukt <= 2000000 THEN 'B'
+        WHEN ukt > 2000000 THEN 'C'
+```
+Yang nanti value `` 'A' `` , `` 'B' `` , dan  `` 'C' `` akan di `` END `` sebagai `` golongan `` (column baru).
 
 ### Screenshot(s) solusi
-
+![running lat4 sql](https://user-images.githubusercontent.com/88588446/227228997-3a0f7d89-008f-4ae3-8f38-7bf56b76a49d.png)
 ### Kendala Pengerjaan soal
+Pada awalnya, tidak tahu syntax penggunaan `` CASE `` pada MySQL.
