@@ -239,8 +239,8 @@ ORDER BY semester ASC , nama ASC , ipk DESC;
 ```
 Men-Select `` nama, semester, ipk `` dari tabel `` data_fix `` , dengan syarat ( `` WHERE `` ) ipk `` IN `` , `` MAX `` ipk di select dari tabel, dan di `` GROUP BY `` dengan semester. Terakhir, dilakukan `` ORDER BY semester ASC , nama ASC , ipk DESC ``  .
 
-## Screenshot(s) solusi
+### Screenshot(s) solusi
 ![running lat5 sql](https://user-images.githubusercontent.com/88588446/227255886-73259a2f-451a-46b6-960c-c7e67d948f25.png)
 
-## Kendala Pengerjaan soal
+### Kendala Pengerjaan soal
 Tidak Ada.
