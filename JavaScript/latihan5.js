@@ -18,7 +18,7 @@ target(printResult);
 function target1(callback) {
   setTimeout(function () {
     callback("2. Aktif dalam hal akademik maupun organisasi");
-  }, 2000); // Menggunakan setTimeout untuk mensimulasikan proses asinkronus
+  }, 2000); 
 }
 
 function printTarget(target) {
@@ -32,7 +32,7 @@ function target2() {
   return new Promise(resolve => {
     setTimeout(() => {
       resolve("3. Memiliki IP diatas 3.7");
-    }, 3000); // Menggunakan setTimeout untuk mensimulasikan proses asinkronus
+    }, 3000); 
   });
 }
 
@@ -52,7 +52,7 @@ function target3() {
   return new Promise(resolve => {
     setTimeout(() => {
       resolve("4. Ingin memperbanyak skill dalam bidang ilmu informatika lainnya");
-    }, 4000); // Menggunakan setTimeout untuk mensimulasikan proses asinkronus
+    }, 4000); 
   });
 }
 
@@ -71,7 +71,7 @@ function target4() {
   return new Promise(resolve => {
     setTimeout(() => {
       resolve("5. Mendekatkan diri dengan tuhan (ini yang susah hehe)");
-    }, 5000); // Menggunakan setTimeout untuk mensimulasikan proses asinkronus
+    }, 5000); 
   });
 }
 
