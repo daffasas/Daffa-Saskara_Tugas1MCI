@@ -140,7 +140,7 @@ Bisa dilihat karena ada 4 value dalam array input-an, maka keluar 4 array 2 dime
 ### Kendala Pengerjaan soal
 sedikit memusingkan saat men-translate soal.
 
-## latihan5.sql
+## latihan4.js
 [OPTIONAL] Implementasi Asynchronous dengan membuat minimal 5 target hidup yang ingin kalian raih di tahun 2023, bisa menggunakan salah satu dari ketiga macam Asynchronous , (Menggunakan ketiganya akan lebih baik).
 ```js
 console.log("Saya Daffa Saskara")
