@@ -234,6 +234,8 @@ printTarget4();
 
 ### Screenshot(s) solusi
 
+![running lat4 js](https://user-images.githubusercontent.com/88588446/227565861-8925601e-d740-444c-89b6-27ad3a27b47c.png)
+
 ### Kendala Pengerjaan soal
 Belajar dari awal semua jenis Asynchronus
 
