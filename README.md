@@ -234,7 +234,7 @@ printTarget4();
 
 ### Screenshot(s) solusi
 
-![running lat4 js](https://user-images.githubusercontent.com/88588446/227565861-8925601e-d740-444c-89b6-27ad3a27b47c.png)
+![running lat4 js](https://user-images.githubusercontent.com/88588446/227567096-1e5fecdd-0dc0-4ceb-90c4-dec09cd4ec45.png)
 
 ### Kendala Pengerjaan soal
 Belajar dari awal semua jenis Asynchronus
